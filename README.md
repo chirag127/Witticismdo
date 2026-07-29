@@ -1,27 +1,39 @@
 # Witticismdo
 
-Witticismdo is a open source browser extension.This browser extension shows you a random joke whenever you click the extension. Please pin the extension to use it properly.
+> Browser extension that shows a random joke every time you click it.
 
-## Installation Instructions
+[![Live](https://img.shields.io/badge/live-Witticismdo.oriz.in-6c5ce7)](https://Witticismdo.oriz.in)
+[![Stars](https://img.shields.io/github/stars/chirag127/Witticismdo?style=social)](https://github.com/chirag127/Witticismdo/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-### First download this repo as a [ZIP file from GitHub](https://api.github.com/repos/chirag127/witticismdo/zipball/main).
+Click the toolbar icon and Witticismdo pops up a fresh dad joke, fetched live from [icanhazdadjoke.com](https://icanhazdadjoke.com/). Pin the extension for one-click laughs.
 
+Live page: https://Witticismdo.oriz.in
 
-#### **Google Chrome / Microsoft Edge in desktop** 
-1. Unzip the file and you should have a folder.
-1. In Chrome/Edge go to the extensions page (`chrome://extensions` or `edge://extensions`).
-1. Enable Developer Mode.
-1. Drag the folder anywhere on the page to import it (do not delete the folder afterwards). or Click the "Load unpacked" button that just appeared and Select the unzipped folder for your extension to install it.
+## Install
 
-#### Install extension in the Mobile
-1. Install kiwi browser.
-1. Go to kiwi://extensions/
-1. Enable Developer Mode.
-1. Install from zip.
+### Chrome / Edge (desktop)
+1. Download this repo as a [ZIP](https://github.com/chirag127/Witticismdo/archive/refs/heads/main.zip) and unzip it.
+2. Open `chrome://extensions` (or `edge://extensions`).
+3. Enable **Developer mode**.
+4. Click **Load unpacked** and select the unzipped folder.
+5. Pin the extension, then click it for a joke.
 
-#### Use as a website
-1. It will give random word, it's meaning and pronunciation on reload.
-1. Unzip the file and you should have a folder.
-1. Open the folder.
-1. Click on popup.html , this web page will open in the browser.
-1. Reload to see new word. ( Refer https://www.wikihow.com/Refresh-a-Page for on how to reload the page)
+### Mobile (Kiwi Browser)
+1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser).
+2. Go to `kiwi://extensions/`.
+3. Enable **Developer mode**.
+4. Choose **Install from zip** and pick the downloaded ZIP.
+
+### Use as a plain web page
+1. Unzip the folder and open `popup.html` in any browser.
+2. Reload the page for a new joke.
+
+## How it works
+`script.js` fetches a joke from the icanhazdadjoke Slack endpoint and renders it into `popup.html`. No build step, no dependencies.
+
+## Tech
+HTML, CSS, vanilla JavaScript, Manifest V2.
+
+## License
+[MIT](./LICENSE)

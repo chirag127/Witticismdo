@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Witticismdo</title>
+<style>
+:root{color-scheme:dark}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;
+background:radial-gradient(circle at 30% 20%,#1e1b3a,#0b0a14);
+color:#eceafe;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;padding:2rem}
+.card{max-width:560px;text-align:center}
+h1{font-size:3rem;letter-spacing:-.02em;background:linear-gradient(90deg,#a78bfa,#f0abfc);
+-webkit-background-clip:text;background-clip:text;color:transparent}
+p{margin:1.2rem 0;font-size:1.15rem;line-height:1.6;color:#b9b6d6}
+#joke{min-height:3rem;font-style:italic;color:#eceafe}
+a{display:inline-block;margin-top:1.5rem;padding:.7rem 1.6rem;border-radius:999px;
+background:#6c5ce7;color:#fff;text-decoration:none;font-weight:600;transition:transform .15s}
+a:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Witticismdo</h1>
+<p>Browser extension that shows a random joke every time you click it.</p>
+<p id="joke">Loading a joke...</p>
+<a href="https://github.com/chirag127/Witticismdo">View on GitHub</a>
+</div>
+<script>
+fetch("https://icanhazdadjoke.com/slack")
+  .then(r=>r.json())
+  .then(d=>{document.getElementById('joke').textContent=d.attachments[0].text})
+  .catch(()=>{document.getElementById('joke').textContent="Why did the joke fail to load? Network issues."});
+</script>
+</body>
+</html>

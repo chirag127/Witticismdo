@@ -2,13 +2,13 @@
 
 > Browser extension that shows a random joke every time you click it.
 
-[![Live](https://img.shields.io/badge/live-Witticismdo.oriz.in-6c5ce7)](https://Witticismdo.oriz.in)
+[![Live](https://img.shields.io/badge/live-witticismdo.oriz.in-6c5ce7)](https://witticismdo.oriz.in)
 [![Stars](https://img.shields.io/github/stars/chirag127/Witticismdo?style=social)](https://github.com/chirag127/Witticismdo/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 Click the toolbar icon and Witticismdo pops up a fresh dad joke, fetched live from [icanhazdadjoke.com](https://icanhazdadjoke.com/). Pin the extension for one-click laughs.
 
-Live page: https://Witticismdo.oriz.in
+Live page: https://witticismdo.oriz.in
 
 ## Install
 
